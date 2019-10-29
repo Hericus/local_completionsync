@@ -52,9 +52,9 @@ class observer {
         }
 
         $sql = "SELECT MAX(mc.timemodified) timecompletion
-                  FROM {course_modules_completion} mc 
-                  JOIN {course_modules} cm 
-                    ON mc.coursemoduleid = cm.id 
+                  FROM {course_modules_completion} mc
+                  JOIN {course_modules} cm
+                    ON mc.coursemoduleid = cm.id
                  WHERE cm.course = ?
                    AND mc.userid = ?
                    AND mc.completionstate > ?";

@@ -43,7 +43,8 @@ class completionsync extends \moodleform {
         $mform = $this->_form;
         $course = $this->_customdata['course'];
 
-        $mform->addElement('advcheckbox', 'disabled', get_string('disablecoursecompsync', 'local_completionsync'), '', array('group' => 1), array(0, 1));
+        $mform->addElement('advcheckbox', 'disabled', get_string('disablecoursecompsync', 'local_completionsync'),
+            '', array('group' => 1), array(0, 1));
 
         // Add common action buttons.
         $this->add_action_buttons();
